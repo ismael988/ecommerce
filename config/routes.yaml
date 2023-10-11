@@ -1,0 +1,16 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+    # Exemple de fichier routes.yaml
+api_users:
+    path: /api/users
+    controller: App\Controller\UserController::index
+    methods: [GET]
+# config/routes.yaml
+
+api_login_check:
+    path: /api/login_check
+    methods: ['POST']
+
